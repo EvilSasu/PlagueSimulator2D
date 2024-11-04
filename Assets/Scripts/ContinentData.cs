@@ -24,7 +24,6 @@ public class ContinentData : MonoBehaviour
     private bool isMenuActivated = false;
     private bool wasThereFirstSickDay = false;
     
-    private double colorVal;
     public int i = 0;
     private void Start()
     {
@@ -69,12 +68,23 @@ public class ContinentData : MonoBehaviour
 
     void CalculateColor()
     {
-        double tmp = 1 - (DeadPeople / Population);
-        colorVal = tmp * 255;
-        int finalColorVal = Convert.ToInt32(colorVal);
-        if (finalColorVal < 0)
-            finalColorVal = 0;
-        color = new Color(finalColorVal, finalColorVal, finalColorVal);
+        double ratio = DeadPeople / Population;
+        float red, green, blue;
+
+        if (ratio <= 0.5)
+        {
+            red = 1.0f;
+            green = 1.0f - (float)(ratio * 2);
+            blue = 1.0f - (float)(ratio * 2);
+        }
+        else
+        {
+            red = 1.0f - (float)((ratio - 0.5) * 2);
+            green = 0.0f;
+            blue = 0.0f;
+        }
+
+        color = new Color(red, green, blue);
         GetComponent<SpriteRenderer>().color = color;
     }
 
