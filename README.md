@@ -76,3 +76,9 @@ PlagueSimulator2D is a simulation game designed to model the growth and spread o
 
 ## Summary
 PlagueSimulator2D is a comprehensive simulation of a global pandemic where players manage various aspects of the disease’s spread. The game incorporates dynamic systems such as the movement of airplanes, population health data, and the changing parameters of the plague itself. As the disease spreads, players can adjust settings like the plague's lethality and cure time to observe how different factors influence the global situation. Through real-time adjustments and data collection (saved in CSV format), the simulation allows for an interactive and informative experience of a pandemic’s global impact.
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Contact
+For questions or contributions, feel free to open an issue or reach out via the [GitHub repository](https://github.com/EvilSasu/PlagueSimulator2D).
