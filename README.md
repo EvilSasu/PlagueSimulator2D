@@ -1,5 +1,3 @@
-# PlagueSimulator2D
-
 ## Project Overview
 PlagueSimulator2D is a simulation game designed to model the growth and spread of a pandemic across multiple continents. The simulation features various parameters, such as temperature, moisture, and plague characteristics, that influence how the disease spreads. Players interact with the game by controlling factors like the contagiousness, lethality, and speed of the plague, as well as managing airplane movements that can spread the disease between cities. The game visualizes the effects of the plague, showing changes in population, sickness, and death across the globe. It also logs simulation data and generates reports for analysis.
 
